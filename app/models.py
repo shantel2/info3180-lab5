@@ -20,7 +20,7 @@ class UserProfile(db.Model):
         self.username = username
         self.password = generate_password_hash(password, method='pbkdf2:sha256')
 
-
+#UserProfile(first_name="Shantel",last_name="Wellington", username="wellington",password="somepassword")
     def is_authenticated(self):
         return True
 
